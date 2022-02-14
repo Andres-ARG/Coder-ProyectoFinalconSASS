@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Playfair Display', serif; }
+
+.parrafoExtend {
+  margin: 50px 0;
+  color: #1f1c1c; }
+
+.boton, .botonEnviar, .botonCancelar {
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px; }
+
+.botonEnviar {
+  color: #a81717; }
+
+.botonCancelar {
+  color: #5edd5e; }
+
+.icon--twitter {
+  color: #1919e7; }
+
+.icon--facebook {
+  color: #0d640d; }
+
+.icon--linkedin {
+  color: #37f807; }
+
+.icon--youtube {
+  color: #e40606; }
+
+/* BARRA DE NAVEGACION */
+.nav {
+  background-color: #092644;
+  padding: 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+  .nav .listaNav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around; }
+    .nav .listaNav li {
+      list-style-type: none;
+      height: 100%;
+      padding: 15px;
+      border-radius: 15px; }
+      .nav .listaNav li:hover {
+        background-color: black;
+        transition: 1s all ease; }
+    .nav .listaNav a {
+      text-decoration: none;
+      color: white; }
+  .nav .contenedorLogo .logo {
+    width: 80px; }
+    .nav .contenedorLogo .logo:hover {
+      transform: scale(1.05);
+      transition: 0.5s all ease-out; }
+
+/* HEADER */
+.header .contenedorHeader {
+  background-image: url(../../img/foto1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  .header .contenedorHeader .titleHeader {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    color: white;
+    border-bottom: black solid 2px;
+    text-align: center; }
+  .header .contenedorHeader .subtitleHeader {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
+    text-align: center;
+    color: white; }
+
+/* MAIN */
+.main .titleSectionPosts {
+  padding: 30px;
+  text-align: center;
+  color: #0c2645; }
+
+.main .sectionPosts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 80vh; }
+  .main .sectionPosts .post {
+    margin: 50px; }
+    .main .sectionPosts .post .imgPost {
+      width: 300px; }
+    .main .sectionPosts .post .textPost {
+      text-align: center;
+      font-size: 20px; }
+    .main .sectionPosts .post .enlacePost {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #00b3e3;
+      font-weight: 700; }
+      .main .sectionPosts .post .enlacePost:hover {
+        color: #092644; }
+
+/* MIXIN*/
+.post {
+  box-shadow: 13px 18px 49px -4px rgba(0, 0, 0, 0.58); }
+
+.post:nth-child(2) {
+  box-shadow: #0c2645; }
+
+.post:nth-child(3) {
+  box-shadow: 13px 18px 49px -4px rgba(230, 7, 7, 0.58); }
+
+@media (max-width: 530px) {
+  .main .sectionPosts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .main .sectionPosts .post .imgPost {
+      width: 70px; } }
+
+@media (max-width: 1200px) {
+  .main .sectionPosts .post {
+    margin: 30px; }
+    .main .sectionPosts .post .imgPost {
+      width: 200px; } }
+
+.contenedorImages {
+  display: grid;
+  grid-template-areas: "img1 img2" "img1 img3";
+  margin-top: 25vh;
+  overflow: hidden; }
+  .contenedorImages .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contenedorImages .imagen a {
+      text-decoration: none;
+      color: white;
+      text-align: center; }
+      .contenedorImages .imagen a h3 {
+        font-size: 35px; }
+    .contenedorImages .imagen:nth-child(1) {
+      grid-area: img1;
+      width: 50vw;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../../img/img1.jpg); }
+    .contenedorImages .imagen:nth-child(2) {
+      grid-area: img2;
+      width: 50vw;
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../../img/img2.jpg); }
+    .contenedorImages .imagen:nth-child(3) {
+      grid-area: img3;
+      height: 50vh;
+      width: 50vw;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../../img/img3.jpg); }
+
+.titleShopCafetera {
+  text-align: center;
+  color: #0c2645;
+  padding: 30px;
+  font-size: 2rem; }
+
+.shopCafetera {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 100px 0; }
+  .shopCafetera .itemCafetera {
+    text-align: center; }
+    .shopCafetera .itemCafetera .imgCafetera {
+      width: 300px; }
+    .shopCafetera .itemCafetera .botonCafetera {
+      background-color: #00b3e3;
+      border-radius: 15px;
+      padding: 5px 20px;
+      border: none; }
+      .shopCafetera .itemCafetera .botonCafetera:hover {
+        background-color: #0c2645; }
+      .shopCafetera .itemCafetera .botonCafetera a {
+        text-decoration: none;
+        color: white; }
+
+/* FOOTER */
+.footer {
+  background-color: gray;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer p {
+    text-align: center; }
+
+.contenedorIconosSociales {
+  display: flex;
+  align-items: center; }
+
+/* PRACTICANDO MAPS */
+i {
+  margin-left: 20px;
+  color: #1919e7; }
+
+i:nth-child(2) {
+  color: #0d640d; }
+
+i:nth-child(3) {
+  color: #37f807; }
+
+i:nth-child(4) {
+  color: #e40606; }
+
+i:hover {
+  color: aquamarine;
+  transition: .5s all ease;
+  transform: scale(1.4); }
+
+.nav {
+  background-color: #092644;
+  padding: 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+  .nav .listaNav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around; }
+    .nav .listaNav li {
+      list-style-type: none;
+      height: 100%;
+      padding: 15px;
+      border-radius: 15px; }
+      .nav .listaNav li:hover {
+        background-color: black;
+        transition: 1s all ease; }
+    .nav .listaNav a {
+      text-decoration: none;
+      color: white; }
+  .nav .contenedorLogo .logo {
+    width: 80px; }
+    .nav .contenedorLogo .logo:hover {
+      transform: scale(1.1);
+      transition: 0.5s all ease-out; }
+
+.header2 {
+  background-image: url(../../img/cafe6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .header2 .titleHeader {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: solid black 1px; }
+  .header2 .textHeader {
+    font-size: 1rem;
+    margin-top: 15px; }

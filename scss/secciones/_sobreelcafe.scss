@@ -1,0 +1,61 @@
+.nav{
+    background-color: #092644;
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    .listaNav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        li{
+            list-style-type: none;
+            height: 100%;
+            padding: 15px;
+            border-radius: 15px;
+            &:hover{
+                background-color: black;
+                transition: 1s all ease;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .contenedorLogo{
+        .logo{
+            width: 80px;
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.5s all ease-out;
+            }
+        }
+    }
+}
+
+.header2{
+    background-image: url(../../img/cafe6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .titleHeader{
+        font-size: 2rem;
+        text-transform: uppercase;
+        border-bottom: solid black 1px;
+    }
+    .textHeader{
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,12 @@
+$estilos: (
+    twitter: #1919e7,
+    facebook: #0d640d,
+    linkedin: #37f807,
+    youtube: #e40606
+);
+
+@each $red, $color in $estilos {
+    .icon--#{$red}{
+        color: $color;
+    }
+}
