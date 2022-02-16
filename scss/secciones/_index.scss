@@ -105,21 +105,6 @@
     }
 }
 
-/* MIXIN*/
-
-.post{
-    @include sombra(13px 18px 49px -4px rgba(0,0,0,0.58));
-}
-
-.post:nth-child(2){
-    @include sombra($color-texto);
-}
-
-.post:nth-child(3){
-    @include sombra(13px 18px 49px -4px rgba(230, 7, 7, 0.58))
-}
-
-
 
 
 @media (max-width: 530px){
@@ -243,23 +228,11 @@
 .contenedorIconosSociales{
     display: flex;
     align-items: center;
+    i{
+        margin-left: 15px;
+    }
 }
 
-/* PRACTICANDO MAPS */
-
-i{
-    margin-left: 20px;
-    color: map-get($estilos, twitter);
-}
-i:nth-child(2){
-    color: map-get($estilos, facebook);
-}
-i:nth-child(3){
-    color: map-get($estilos, linkedin);
-}
-i:nth-child(4){
-    color: map-get($estilos, youtube);
-}
 i:hover{
     color: aquamarine;
     transition: .5s all ease;
