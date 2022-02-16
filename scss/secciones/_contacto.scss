@@ -1,0 +1,32 @@
+.header4{
+    background-image: url(../img/contacto.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .titleHeader{
+        font-size: 3rem;
+        text-transform: uppercase;
+        border-bottom: solid black 1px;
+        color: white;
+    }
+}
+.mainForm{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    label{
+        border-bottom: solid 2px black;
+    }
+}

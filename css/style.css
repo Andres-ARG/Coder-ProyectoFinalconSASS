@@ -74,7 +74,8 @@ body {
   flex-wrap: wrap;
   height: 80vh; }
   .main .sectionPosts .post {
-    margin: 50px; }
+    margin: 50px;
+    box-shadow: 12px 27px 39px 0px rgba(0, 0, 0, 0.75); }
     .main .sectionPosts .post .imgPost {
       width: 300px; }
     .main .sectionPosts .post .textPost {
@@ -106,8 +107,7 @@ body {
 
 .contenedorImages {
   display: grid;
-  grid-template-areas: "img1 img2"
- "img1 img3";
+  grid-template-areas: "img1 img2" "img1 img3";
   margin-top: 25vh;
   overflow: hidden; }
   .contenedorImages .imagen {
@@ -223,7 +223,7 @@ i:hover {
       transition: 0.5s all ease-out; }
 
 .header2 {
-  background-image: url(../../img/cafe6.jpg);
+  background-image: url(../img/cafe6.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,3 +239,53 @@ i:hover {
   .header2 .textHeader {
     font-size: 1rem;
     margin-top: 15px; }
+
+.header3 {
+  background-image: url(../img/img3.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .header3 .titleHeader {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: solid black 1px;
+    color: black; }
+  .header3 .textHeader {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: black; }
+
+.header4 {
+  background-image: url(../img/contacto.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .header4 .titleHeader {
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom: solid black 1px;
+    color: white; }
+
+.mainForm {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .formulario label {
+    border-bottom: solid 2px black; }
