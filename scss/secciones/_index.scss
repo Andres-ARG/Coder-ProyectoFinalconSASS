@@ -174,7 +174,7 @@
             height: 100vh;
             background-size: cover;
             background-position: center;
-            background-image: url(../../img/img1.jpg);
+            background-image: url(../img/img1.jpg);
         }
         &:nth-child(2){
             grid-area: img2;
@@ -182,7 +182,7 @@
             height: 50vh;
             background-size: cover;
             background-position: center;
-            background-image: url(../../img/img2.jpg);
+            background-image: url(../img/img2.jpg);
         }
         &:nth-child(3){
             grid-area: img3;
@@ -190,7 +190,7 @@
             width: 50vw;
             background-size: cover;
             background-position: center;
-            background-image: url(../../img/img3.jpg);
+            background-image: url(../img/img3.jpg);
         }
     }
 }

@@ -162,21 +162,21 @@ body {
       height: 100vh;
       background-size: cover;
       background-position: center;
-      background-image: url(../../img/img1.jpg); }
+      background-image: url(../img/img1.jpg); }
     .contenedorImages .imagen:nth-child(2) {
       grid-area: img2;
       width: 50vw;
       height: 50vh;
       background-size: cover;
       background-position: center;
-      background-image: url(../../img/img2.jpg); }
+      background-image: url(../img/img2.jpg); }
     .contenedorImages .imagen:nth-child(3) {
       grid-area: img3;
       height: 50vh;
       width: 50vw;
       background-size: cover;
       background-position: center;
-      background-image: url(../../img/img3.jpg); }
+      background-image: url(../img/img3.jpg); }
 
 .titleShopCafetera {
   text-align: center;
