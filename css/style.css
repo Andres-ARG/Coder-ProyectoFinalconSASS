@@ -39,13 +39,21 @@ body {
       transform: scale(1.05);
       transition: 0.5s all ease-out; }
 
+@media (max-width: 700px) {
+  .nav .listaNav {
+    text-align: center;
+    font-size: 14px; }
+    .nav .listaNav .contenedorLogo .enlaceLogo .logo {
+      display: none; } }
+
 /* HEADER */
 .header .contenedorHeader {
   background-image: url(../img/foto1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh; }
+  height: 100vh;
+  width: 100%; }
   .header .contenedorHeader .titleHeader {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -91,13 +99,15 @@ body {
       .main .sectionPosts .post .enlacePost:hover {
         color: #092644; }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
   .main .sectionPosts {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; }
-    .main .sectionPosts .post .imgPost {
-      width: 70px; } }
+    .main .sectionPosts .post {
+      height: 100px; }
+      .main .sectionPosts .post .imgPost {
+        display: none; } }
 
 @media (max-width: 1200px) {
   .main .sectionPosts .post {
@@ -175,7 +185,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 2rem; }
   .footer p {
     text-align: center; }
 
@@ -222,6 +233,13 @@ i:hover {
       transform: scale(1.1);
       transition: 0.5s all ease-out; }
 
+@media (max-width: 700px) {
+  .nav .listaNav {
+    text-align: center;
+    font-size: 14px; }
+    .nav .listaNav .contenedorLogo .enlaceLogo .logo {
+      display: none; } }
+
 .header2 {
   background-image: url(../img/cafe6.jpg);
   background-position: center;
@@ -260,6 +278,13 @@ i:hover {
     margin-top: 15px;
     color: black; }
 
+@media (max-width: 700px) {
+  .nav .listaNav {
+    text-align: center;
+    font-size: 14px; }
+    .nav .listaNav .contenedorLogo .enlaceLogo .logo {
+      display: none; } }
+
 .header4 {
   background-image: url(../img/contacto.jpg);
   background-position: top;
@@ -289,3 +314,6 @@ i:hover {
   width: 100%; }
   .formulario label {
     border-bottom: solid 2px black; }
+  .formulario .submit:hover {
+    background-color: black;
+    color: white; }

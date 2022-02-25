@@ -20,3 +20,18 @@
         color: black;
     }
 }
+@media (max-width: 700px){
+    .nav{
+        .listaNav{
+            text-align: center;
+            font-size: 14px;
+            .contenedorLogo{
+                .enlaceLogo{
+                    .logo{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
